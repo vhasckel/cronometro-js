@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap');
+
+:root {
+	--background-color: #000000;
+	--border-color: #100720;
+}
+
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Ubuntu';
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: var(--background-color);
+}
+
+.container {
+	background-color: var(--background-color);
+	color: white;
+	width: 30rem;
+	height: 30rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border: 2px solid var(--border-color);
+	border-radius: 50%;
+}
+
+.container h1 {
+	font-weight: 100;
+}
+
+.timer {
+	display: flex;
+	padding: 2rem;
+}
+
+.buttons {
+	display: flex;
+	gap: 1rem;
+}
+
+button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-family: 'Ubuntu';
+	letter-spacing: 1px;
+	color: white;
+	background-color: var(--background-color);
+	width: 5.5rem;
+	height: 3rem;
+	border: 2px solid var(--border-color);
+	border-radius: 10px;
+}
+
+.timer {
+	gap: .5rem;
+	font-size: 3rem;
+}
+
+@media (max-width: 428px) {
+	.container {
+		width: 22rem;
+		height: 22rem;
+	}
+}
