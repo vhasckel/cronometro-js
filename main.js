@@ -16,7 +16,7 @@ const startTimer = () => {
   if (!isRunning) {
     isRunning = true;
 
-    //setInterval() é usada para repetir uma ação (a callback) em um intervalo determinado de tempo
+    //setInterval() é usada para repetir uma ação (a callback) em um intervalo determinado de
     interval = setInterval(() => {
       milliseconds += 10;
 
@@ -83,3 +83,4 @@ resetBtn.addEventListener("click", resetTimer);
 
 // Ocultar o botão de pausa no início e exibir apenas o botão de início
 pauseBtn.style.display = "none";
+resetBtn.style.display = "none";
